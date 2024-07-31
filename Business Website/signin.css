@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url(Double_Feature.ttf);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Double_Feature.ttf" ;
+}
+
+body {
+    min-height: 100vh ;
+    background: url(images/170604224537-colorscope-green-leaves-image.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.body {
+    text-align: center;
+
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 30px 20px 100px;
+    background: transparent;
+    /*rgb(8, 219, 5);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 50px;
+    color: rgb(255, 0, 0);
+    text-decoration: wavy;
+    font-weight: 800;
+    padding-right: 0px;
+}
+
+.navbar {
+    margin-right: 0;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 22px;
+    color: rgb(255, 0, 0);
+    font-weight: 600;
+    text-decoration: dotted;
+    margin-right: 13px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: green;
+    transition: .3s;
+}
+
+.navbar a:hover:before {
+    width: 100%;
+}
+
+.navbar a:hover {
+    background:url(images/MC-Website-Gradient-Background-green.png) ; 
+    padding: 10px;
+    transition: .3s;
+    text-decoration: underline;
+    transition: .8s;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    padding-top: 150px;
+}
+
+.signup-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.jonny {
+    font-family: Arial, sans-serif;
+    background: url(images/13rQbFRuZSZvB0imhApN6FDq6Zw.avif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+}
+
+.login-form {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+.login-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

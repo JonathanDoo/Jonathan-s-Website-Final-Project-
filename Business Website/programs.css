@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh ;
+    background: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 30px 20px 100px;
+    background: url(images/MC-Website-Gradient-Background-green.png) no-repeat;
+    /*rgb(8, 219, 5);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-decoration: wavy;
+    font-weight: 800;
+    padding-right: 0px;
+}
+
+.navbar {
+    margin-right: 0;
+}
+
+
+
+.navbar a {
+    position: relative;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-decoration: dotted;
+    margin-right: 13px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: green;
+    transition: .8s;
+}
+
+.navbar a:hover:before {
+    width: 100%;    
+}
+
+.navbar a:hover {
+    background:url(images/MC-Website-Gradient-Background-green.png) ; 
+    padding: 10px;
+    transition: .3s;
+    text-decoration: underline;
+    transition: .8s;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links {
+        margin-top: 10px;
+    }
+    .toggle_btn {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+    .links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 20px;
+    }
+    .links.open {
+        display: flex;
+    }
+    .links li {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+}
+.style {
+    text-align: center;
+    padding-top: 89px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+.program{
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 30px;
+}
+.nice{
+    background-color: rgb(234, 230, 230);
+    font-size: 25px;
+}
+.penny{
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+.nicee{
+    background-color: yellow;
+}
+.table-alignment{
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+}
+.color{
+    background-color: plum;
+    padding: 25px;
+    padding-top: 0px;
+}
+.nic{
+    background-color: yellow;
+    padding: 25px;
+    padding-top: 0px;
+}
+.nicee{
+    text-align: center;
+    padding-left: 500px;
+    margin: 0px;
+    border: 0px;
+    max-width: 100%;
+}
+.whole{
+    text-align: right;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    width: 100%;
+}
+.l{
+    background-color: rgb(255, 217, 0);
+    font-size: 22px;
+}
+.k{
+    background-color: rgb(221, 89, 221);
+    font-size: 22px;
+}
+.couples{
+    text-align: center;
+    background-color: aquamarine;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+
+}
+.tittle{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+.words{
+    background-color: rgb(59, 222, 168);
+    font-size: 25px;
+}
+.block {
+    display: block;
+    width: 75%;
+    border: none;
+    background-color: rgba(236, 236, 0, 0.909);
+    padding: 14px 28px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+.block:hover{
+    background-color: purple;
+    color: white;
+}
+.blockk {
+    display: block;
+    width: 75%;
+    border: none;
+    background-color: rgb(212, 107, 212);
+    padding: 14px 28px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+.blockk:hover{
+    background-color: green;
+    color: white;
+}
+.blockkk {
+    display: block;
+    width: 75%;
+    border: none;
+    background-color: rgb(34, 192, 158);
+    padding: 14px 28px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+.blockkk:hover{
+    background-color: rgb(254, 111, 59);
+    color: white;
+}
+.Group{
+    text-align: center;
+    background-color: green;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+}
+.tittles{
+    color: white;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+.text{
+    background-color: rgb(0, 183, 61);
+    font-size: 25px;
+    color: white;
+}
+.blockkkk {
+    display: block;
+    width: 75%;
+    border: none;
+    background-color: rgb(0, 151, 0);
+    padding: 14px 28px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    color: white;
+}
+.blockkkk:hover{
+    background-color: red;
+}
+footer {
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    font-size: 25px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
