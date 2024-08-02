@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh ;
+    background: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 30px 20px 100px;
+    background: url(images/MC-Website-Gradient-Background-green.png) no-repeat;
+    /*rgb(8, 219, 5);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-decoration: wavy;
+    font-weight: 800;
+    padding-right: 0px;
+}
+
+.navbar {
+    margin-right: 0;
+}
+
+
+
+.navbar a {
+    position: relative;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-decoration: dotted;
+    margin-right: 13px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: green;
+    transition: .8s;
+}
+
+.navbar a:hover:before {
+    width: 100%;    
+}
+
+.navbar a:hover {
+    background:url(images/MC-Website-Gradient-Background-green.png) ; 
+    padding: 10px;
+    transition: .3s;
+    text-decoration: underline;
+    transition: .8s;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links {
+        margin-top: 10px;
+    }
+    .toggle_btn {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+    .links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 20px;
+    }
+    .links.open {
+        display: flex;
+    }
+    .links li {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+}
+.style {
+    text-align: center;
+    padding-top: 89px;
+    padding-bottom: 0px;
+    margin: 0px;
+    
+}
+.mhyc_story{
+    background-color: rgb(255, 255, 215);
+    text-align: right;
+    overflow: hidden;
+    padding: 20px;
+    padding-left: 100px;
+}
+.lenny{
+    text-align: right;
+    padding-top: 0px;
+    margin-bottom: 20px;
+    padding-right: 250px;
+}
+.framework{
+    font-family: Georgia;
+    width: 700px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 25px;
+    background-color: rgba(231, 135, 151, 0.791);
+    
+}
+p{
+    color: #000000;
+    font-size: 20px;
+    font-family: Times ;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    text-align: center;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 2px;
+    text-indent: initial;
+    border-spacing: 2px;
+    text-align: left;
+    width: 100%;
+}
+.mission_statement{
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background-color: pink;
+    padding-left: 20px;
+    padding: 25px;
+}
+.Image_top{
+    text-align: center;
+    padding-right: 125px;
+    padding-left: 0px;
+}
+.jenny {
+    text-align: center;
+    max-width: 50%;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+
+}
+.image-container{
+    text-align: right;
+    text-align: center;
+}
+.image-container img{
+    max-width: 100%;
+    padding-right: 100px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.framework-two{
+    font-family: Georgia;
+    width: 700px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    background-color: rgba(255, 255, 171, 0.683);;
+    padding: 25px;
+}
+.about_me{
+    background-color: rgb(0, 157, 255);
+    text-align: right;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+}
+.Benny{
+    text-align: center;
+    max-width: 50%;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+}
+.framework3{
+    font-family: Georgia;
+    width: 700px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    background-color: rgb(0, 110, 255);
+    padding: 15px;
+}
+.image-container2 {
+    text-align: right;
+    text-align: center;
+}
+.image-container2 img{
+    max-width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+.Future_plan{
+    text-align: right;
+    overflow: hidden;
+    padding: 20px;
+    padding-left: 100px;
+    background-color: green;
+}
+.fenny{
+    text-align: right;
+    padding-top: 0px;
+    margin-bottom: 20px;
+    padding-right: 250px;
+}
+.framework4{
+    font-family: Georgia;
+    width: 700px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    background-color: rgb(5, 165, 5);
+    padding: 15px;
+}
+.image-container4 {
+    text-align: right;
+    text-align: center;
+}
+.image-container4 img{
+    max-width: 100%;
+    padding-right: 100px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+footer {
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    font-size: 25px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}

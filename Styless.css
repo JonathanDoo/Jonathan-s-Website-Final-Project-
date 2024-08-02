@@ -1,0 +1,111 @@
+.navbar {
+    /* Ensure navbar doesn't collapse or wrap */
+    white-space: nowrap;
+}
+
+.navbar ul {
+    /* Remove default list styling */
+    list-style-type: none;
+    /* Adjust margin to control space between items */
+    margin: 0;
+    padding: 0;
+    /* Ensure all list items are displayed inline */
+    display: inline-block;
+}
+
+.navbar li {
+    /* Adjust padding/margin to control space between items */
+    margin: 0 10px;
+    /* Align items to the right */
+    float: right; /* You can use flexbox or text-align as alternatives */
+}
+
+.navbar li a {
+    /* Style links within navbar items */
+    text-decoration: none;
+    color: #333; /* Adjust color as needed */
+    /* Add padding/margin to adjust space within each link */
+    padding: 10px 15px;
+    /* Display links inline */
+    display: inline-block;
+}
+
+/* Optionally, you can add a class to specifically target a single item */
+.navbar .special-item {
+    float: right; /* Adjust position as needed */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: url(13rQbFRuZSZvB0imhApN6FDq6Zw.avif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.login-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+.body{
+width: 100%;
+padding: 10px;
+font-size: 18px;
+color: #fff;
+background-color: #007bff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+/*<div class="image-container">
+            <img src="hand-drawn-mental-health-social-media-cover-template_23-2149055030.avif" alt="Image Description">
+</div>*/
